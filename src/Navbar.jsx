@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaCogs } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt1 } from "react-icons/hi";
+import { Link } from "react-scroll"; // Import react-scroll Link
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,23 +19,27 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="text-white font-mono text-3xl tracking-wider flex items-center select-none">
             <FaCogs className="mr-2" />
-            Shiuma
+            <a className='text-white hover:text-indigo-300' href="#hero">Shiuma</a>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex space-x-6">
-            <a
-              href="#skills"
-              className="px-4 py-2 text-lg font-medium rounded-lg hover:bg-indigo-700 transition duration-300"
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              className="px-4 py-2 text-lg text-white font-medium rounded-lg hover:bg-indigo-700 hover:text-slate-800 transition duration-300 cursor-pointer"
             >
               Skills
-            </a>
-            <a
-              href="#projects"
-              className="px-4 py-2 text-lg font-medium rounded-lg hover:bg-indigo-700 transition duration-300"
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="px-4 py-2 text-lg text-white font-medium rounded-lg hover:bg-indigo-700 hover:text-slate-800 transition duration-300 cursor-pointer"
             >
               Projects
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Icon */}
@@ -60,11 +65,25 @@ const Navbar = () => {
       {nav && (
         <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 flex justify-center items-center">
           <ul className="text-center">
-            <li className="py-3 text-2xl hover:text-indigo-400 cursor-pointer">
-              Skills
+            <li className="py-3 text-2xl text-white hover:text-indigo-400 cursor-pointer">
+              <Link
+                to="skills"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu} // Close menu when clicked
+              >
+                Skills
+              </Link>
             </li>
-            <li className="py-3 text-2xl hover:text-indigo-400 cursor-pointer">
-              Projects
+            <li className="py-3 text-2xl text-white hover:text-indigo-400 cursor-pointer">
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu} // Close menu when clicked
+              >
+                Projects
+              </Link>
             </li>
           </ul>
         </div>

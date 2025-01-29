@@ -19,7 +19,7 @@ import ReactImg from "./images/React.png";
 
 const Skills = () => {
   return (
-    <div className="text-gray-400 mx-auto max-w-[1200px] mt-8">
+    <div className="text-gray-400 mx-auto max-w-[1200px] mt-8" id="skills">
       <h2 className="text-4xl mb-8 text-white text-center ">
         My Tech Stack
       </h2>

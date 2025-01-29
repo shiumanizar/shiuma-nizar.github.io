@@ -24,7 +24,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex flex-col lg:flex-row animate-fadeIn justify-around items-center p-10 pt-20 space-y-15 lg:space-y-0 lg:space-x-10 text-white pt-15 ">
+    <section className="flex flex-col lg:flex-row animate-fadeIn justify-around items-center p-10 pt-20 space-y-15 lg:space-y-0 lg:space-x-10 text-white pt-15 " id="hero">
   {/* Left Section */}
   <div className="flex-1 lg:w-1/3">
     <p className="text-4xl mb-5 text-slate-300">Hi, I'm</p>
