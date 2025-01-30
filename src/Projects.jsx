@@ -39,9 +39,9 @@ const Projects = () => {
       link: null,
     },
     {
-      title: "Dhonbez",
+      title: "Donbez",
       description:
-        "Developed a robust content management system using PHP and Kirby CMS to showcase Dhonbez's portfolio in resort and commercial construction.",
+        "Developed a robust content management system using PHP and Kirby CMS to showcase Donbez's portfolio in resort and commercial construction.",
       image: Dhonbez,
       technologies: [
         <DiPhp className="text-indigo-600" />,

@@ -19,7 +19,11 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="text-white font-mono text-3xl tracking-wider flex items-center select-none">
             <FaCogs className="mr-2" />
-            <a className='text-white hover:text-indigo-300' href="#hero">Shiuma</a>
+            <Link
+              to="hero"
+              smooth={true}
+              duration={500}
+              className='text-white hover:text-indigo-300 cursor-pointer' >Shiuma</Link>
           </div>
 
           {/* Desktop Navigation */}

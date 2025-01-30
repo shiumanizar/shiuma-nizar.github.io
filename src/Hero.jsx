@@ -24,14 +24,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="flex flex-col lg:flex-row animate-fadeIn justify-around items-center p-10 pt-20 space-y-15 lg:space-y-0 lg:space-x-10 text-white pt-15 " id="hero">
+    <section className="flex flex-col lg:flex-row animate-fadeIn justify-around items-center p-10 pt-20 space-y-10 lg:space-y-0 lg:space-x-10 text-white" id="hero">
   {/* Left Section */}
   <div className="flex-1 lg:w-1/3">
     <p className="text-4xl mb-5 text-slate-300">Hi, I'm</p>
     <h1 className="text-6xl">{name}</h1> {/* Typing animation for name */}
     <hr />
     <p className="mt-10 text-xl text-slate-300 font-sans">
-      a Software Engineer with a keen interest and experience in web
+      A Software Engineer with a keen interest and experience in web
       development. I am passionate about finding technical solutions to
       real-life issues and creating seamless, user-focused digital
       experiences using modern tools and technologies.
@@ -39,7 +39,7 @@ const Hero = () => {
   </div>
 
   {/* Middle Section */}
-  <div className="flex-1 lg:w-1/3">
+  <div className="flex-1 lg:w-1/3 sm:pb-5 sm:mt-5">
     <img
       src={HeroPic}
       alt="Shiuma's Profile"
@@ -59,12 +59,12 @@ const Hero = () => {
       Let’s connect!
     </p>
     <div className="mt-10 flex items-center space-x-2">
-      {/* LinkedIn Icon */}
+      {/* LinkedIn Icon  */}
       <a
         href="https://www.linkedin.com/in/shiuma-nizar"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 text-5xl"
+        className="text-3xl text-blue-600 hover:text-blue-800"
       >
         <FaLinkedin />
       </a>
@@ -74,13 +74,14 @@ const Hero = () => {
         href="https://www.linkedin.com/in/shiuma-nizar"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 hover:text-blue-800 text-4xl font-semibold"
+        className="text-2xl font-semibold text-blue-600 hover:text-blue-800"
       >
         shiuma-nizar
       </a>
     </div>
   </div>
 </section>
+
 
   );
 };
