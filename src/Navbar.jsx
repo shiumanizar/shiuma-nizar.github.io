@@ -23,7 +23,10 @@ const Navbar = () => {
               to="hero"
               smooth={true}
               duration={500}
-              className='text-white hover:text-indigo-300 cursor-pointer' >Shiuma</Link>
+              className="text-white hover:text-indigo-300 cursor-pointer"
+            >
+              Shiuma
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -67,7 +70,14 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {nav && (
-        <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 flex justify-center items-center">
+        <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 flex justify-center items-center z-[100]">
+          {/* Close Button Positioned Absolutely */}
+          <AiOutlineClose
+            onClick={toggleMenu}
+            size={30}
+            className="absolute top-5 right-6 text-white cursor-pointer z-[110]" // Increased z-index
+          />
+
           <ul className="text-center">
             <li className="py-3 text-2xl text-white hover:text-indigo-400 cursor-pointer">
               <Link
