@@ -66,7 +66,7 @@ const Projects = () => {
         "Designed and implemented a luxury travel WordPress website. Created dynamic content sections for destinations and resorts with responsive design for seamless navigation.",
       image: Som,
       technologies: [<DiWordpress className="text-blue-700" />],
-      link: "https://som.travel/",
+      link: null,
     },
   ];
 
