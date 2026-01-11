@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import HeroPic from "./images/hero-image.jpeg";
+import HeroPic from "./images/hero-image.jpg";
 import { FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
